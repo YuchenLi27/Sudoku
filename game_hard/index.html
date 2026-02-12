@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hard Game | Sudoku Mock</title>
+  <link rel="stylesheet" href="../css/global.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../">
+        <span class="dot"></span>
+        <span>Sudoku Mock</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../">Home</a></li>
+        <li><a href="../selection/">Selection</a></li>
+        <li><a class="active" href="../game_hard/">Hard</a></li>
+        <li><a href="../game_easy/">Easy</a></li>
+        <li><a href="../rules/">Rules</a></li>
+        <li><a href="../high_scores/">High Scores</a></li>
+        <li><a href="../login/">Login</a></li>
+        <li><a href="../register/">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="game-top">
+        <div>
+          <h1 style="margin-bottom: 6px;">Hard Game</h1>
+          <p style="margin: 0;">9×9 board (mock). Enter numbers 1–9.</p>
+        </div>
+        <span class="timer">00:12:45</span>
+      </div>
+
+      <div class="board board-9" aria-label="9 by 9 Sudoku board">
+        <!-- Row 1 -->
+        <div class="row">
+          <input class="cell" type="number" min="1" max="9" value="5" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="1" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+        </div>
+        <!-- Row 2 -->
+        <div class="row">
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="7" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="2" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="6" />
+          <input class="cell" type="number" min="1" max="9" />
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="3" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="8" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="4" />
+        </div>
+        <!-- Row 4 -->
+        <div class="row">
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="1" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="6" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="8" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+        </div>
+        <!-- Row 5 -->
+        <div class="row">
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="8" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="2" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+        </div>
+        <!-- Row 6 -->
+        <div class="row">
+          <input class="cell" type="number" min="1" max="9" value="6" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="1" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="9" />
+          <input class="cell" type="number" min="1" max="9" />
+        </div>
+        <!-- Row 7 -->
+        <div class="row">
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="1" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="7" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+        </div>
+        <!-- Row 8 -->
+        <div class="row">
+          <input class="cell" type="number" min="1" max="9" value="8" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="4" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+        </div>
+        <!-- Row 9 -->
+        <div class="row">
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="4" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="7" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="3" />
+          <input class="cell" type="number" min="1" max="9" />
+          <input class="cell" type="number" min="1" max="9" value="5" />
+        </div>
+      </div>
+
+      <p style="margin-top: 14px;">
+        Note: this is a static mock. Inputs are for layout only.
+      </p>
+    </div>
+  </main>
+</body>
+</html>
