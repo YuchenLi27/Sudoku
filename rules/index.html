@@ -3,25 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rules | Sudoku Mock</title>
-  <link rel="stylesheet" href="../css/global.css" />
+  <title>Rules | Sudoku Mock</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Use absolute path so local Live Server + GitHub Pages behave consistently -->
+  <link rel="stylesheet" href="/css/global.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="brand" href="../">
-        <span class="dot"></span>
+      <a class="brand" href="/">
+        <!-- Simple inline SVG logo for branding -->
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="4" fill="currentColor" opacity="0.25"></rect>
+          <path d="M7 8h10M7 12h10M7 16h10M8 7v10M12 7v10M16 7v10"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.9"></path>
+        </svg>
         <span>Sudoku Mock</span>
       </a>
+
       <ul class="nav-links">
-        <li><a href="../">Home</a></li>
-        <li><a href="../selection/">Selection</a></li>
-        <li><a href="../game_hard/">Hard</a></li>
-        <li><a href="../game_easy/">Easy</a></li>
-        <li><a class="active" href="../rules/">Rules</a></li>
-        <li><a href="../high_scores/">High Scores</a></li>
-        <li><a href="../login/">Login</a></li>
-        <li><a href="../register/">Register</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/selection/">Selection</a></li>
+        <li><a href="/game_hard/">Hard</a></li>
+        <li><a href="/game_easy/">Easy</a></li>
+        <li><a class="active" href="/rules/">Rules</a></li>
+        <li><a href="/high_scores/">High Scores</a></li>
+        <li><a href="/login/">Login</a></li>
+        <li><a href="/register/">Register</a></li>
       </ul>
     </nav>
   </header>
@@ -29,10 +40,10 @@
   <main>
     <div class="card">
       <h1>Sudoku Rules</h1>
-      <p>Standard Sudoku rules. This site is a static HTML/CSS mock.</p>
+      <p>Standard Sudoku rules. This site is a static HTML/CSS mock (no gameplay logic yet).</p>
 
       <h2 style="margin-top: 16px;">How to Play</h2>
-      <ol style="color: var(--muted); line-height: 1.8;">
+      <ol style="color: var(--muted); line-height: 1.8; margin: 8px 0 0; padding-left: 18px;">
         <li>Each row must contain each number exactly once.</li>
         <li>Each column must contain each number exactly once.</li>
         <li>Each sub-grid (box) must contain each number exactly once.</li>
@@ -41,14 +52,43 @@
       </ol>
 
       <h2 style="margin-top: 18px;">Credits</h2>
-      <p style="margin-bottom: 10px;">Made by: <span style="color: var(--text);">Your Name</span></p>
+      <p style="margin: 8px 0 10px;">
+        Made by: <span style="color: var(--text); font-weight: 600;">Yuchen</span>
+      </p>
 
       <ul style="margin: 0; padding-left: 18px; color: var(--muted);">
-        <li><a class="btn" style="padding: 8px 12px;" href="mailto:you@example.com">Email</a></li>
-        <li style="margin-top: 10px;"><a class="btn" style="padding: 8px 12px;" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></li>
-        <li style="margin-top: 10px;"><a class="btn" style="padding: 8px 12px;" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+        <li>
+          <a class="btn" style="padding: 8px 12px;" href="mailto:thismyEmail@gmail.com">
+            thismyEmail@gmail.com
+          </a>
+        </li>
+
+        <li style="margin-top: 10px;">
+          <a class="btn" style="padding: 8px 12px;"
+             href="https://github.com/YuchenLi27" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </li>
+
+        <li style="margin-top: 10px;">
+          <a class="btn" style="padding: 8px 12px;"
+             href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+        </li>
       </ul>
+
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px;">
+        <a class="btn" href="/high-scores/">High Scores</a>
+        <a class="btn" href="/login/">Login</a>
+        <a class="btn" href="/register/">Register</a>
+      </div>
     </div>
+
+    <!-- Optional: quick local-path sanity check (remove later if you want) -->
+    <p style="margin-top: 14px; color: var(--muted);">
+      Tip: If the styling looks wrong, ensure you opened the site from the project root with Live Server.
+    </p>
   </main>
 </body>
 </html>
