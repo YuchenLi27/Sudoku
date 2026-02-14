@@ -8,14 +8,14 @@ This project demonstrates layout design, navigation structure, and responsive te
 ## 🔗 Live Website
 
 Github Pages Link:  
-https://your-username.github.io/sudoku-mock/
+https://yuchenli27.github.io/Sudoku/
 
 ---
 
 ## 📁 Repository
 
 Github Repo Link:  
-https://github.com/your-username/sudoku-mock
+https://github.com/YuchenLi27/Sudoku
 
 ---
 
@@ -59,7 +59,7 @@ On mobile:
 
 ## 📹 Demo Video
 
-
+https://youtu.be/vWqgjkxEkHg
 
 ---
 
