@@ -108,7 +108,7 @@ For assumptions, I assumed that the 6×6 Sudoku board would use a 2×3 subgrid s
 
 7️⃣ External Resources Used
 
-MDN Web Docs for CSS reference
+MDN Web Docs for CSS reference,
 Google Inter Font
 
 
