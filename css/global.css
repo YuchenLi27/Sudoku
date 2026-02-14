@@ -273,3 +273,17 @@ p{ color: var(--muted); line-height: 1.6; }
   border-bottom-width: 3px;
   border-bottom-color: rgba(255,255,255,0.22);
 }
+
+.home-image{
+  width: 100%;
+  margin-top: 18px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: transform 200ms ease;
+}
+
+.home-image:hover{
+  transform: scale(1.01);
+}
+
